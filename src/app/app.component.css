@@ -1,0 +1,33 @@
+.error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 0.875em; /* Adjust font size as needed */
+  }
+  
+  .error-message small {
+    display: block; /* Ensure each error message appears on a new line */
+  }
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .content {
+   min-height: calc(100vh - 450px); /* Adjust based on your header/footer height */
+    padding: 20px;
+  }
+  
+  app-header, app-footer {
+    /*background-color: #333;*/
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+  }
