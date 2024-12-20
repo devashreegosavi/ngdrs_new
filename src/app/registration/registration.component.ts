@@ -97,7 +97,7 @@ export class RegistrationComponent {
   
     this.apiservice.insertusercitizen(this.form.value).subscribe({
       next : (response) => {
-        console.log('User Added successfully')
+        console.log('User Added successfully ')
       },
       error : (err) => {
         console.log('Error in adding user')
