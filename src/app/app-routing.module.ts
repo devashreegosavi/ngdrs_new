@@ -13,6 +13,7 @@ import { EsearchComponent } from './esearch/esearch.component';
 import { UserMnmtComponent } from './user-mnmt/user-mnmt.component';
 import { ValuationComponent } from './valuation/valuation.component';
 import { CertCopyComponent } from './cert-copy/cert-copy.component';
+import { AuthGuardService } from './auth-guard.service';
 
 const routes: Routes = [
   { path : '', redirectTo :'/home', pathMatch : 'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   { 
     path : 'welcomepage',
     component : WelcomepageComponent,
+    canActivate : [AuthGuardService],
     children: [
       { path : 'geninfolist', component : GeneralInfoListComponent},
       { path : 'esearch', component : EsearchComponent},
